@@ -1,14 +1,11 @@
-import level1.Collatz;
-import level1.Reverse;
-import level1.arrPlusArr;
-import level1.hashadNum;
+import level1.*;
 
 import java.util.Arrays;
 
 public class AlgorithmApp {
     public static void main(String[] args) {
-        Reverse r = new Reverse();
-        System.out.println(Arrays.toString(r.solution(896745)));
-
+        MinNumDelete min = new MinNumDelete();
+        int[] a = {4,3,2,1};
+        System.out.println(Arrays.toString(min.solution(a)));
     }
 }

@@ -3,9 +3,11 @@ import level1.*;
 public class AlgorithmApp {
     public static void main(String[] args) {
 
-        StrangeString strangeString = new StrangeString();
 
-        String s = strangeString.solution("try hello world");
-        System.out.println("answer is = " + s);
+        IntegerSQRT integerSQRT = new IntegerSQRT();
+        long solution = integerSQRT.solution(121);
+        System.out.println("solution = " + solution);
+
+
     }
 }

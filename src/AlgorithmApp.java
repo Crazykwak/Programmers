@@ -1,7 +1,6 @@
 import level1.*;
 
 import java.util.Arrays;
-import java.util.StringTokenizer;
 
 public class AlgorithmApp {
     public static void main(String[] args) {
@@ -21,6 +20,10 @@ public class AlgorithmApp {
         }
         sb.deleteCharAt(sb.lastIndexOf("-"));
         System.out.println(sb.toString());
+
+        LCMAndGCF lc = new LCMAndGCF();
+        int[] solution = lc.solution(2, 5);
+        System.out.println("solution = " + Arrays.toString(solution));
 
     }
 }

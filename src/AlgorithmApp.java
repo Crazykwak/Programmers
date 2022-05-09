@@ -1,4 +1,5 @@
 import level1.StringOrNumber;
+import level1.StringReverse;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,15 +7,13 @@ import java.util.Arrays;
 public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
-        StringOrNumber sol = new StringOrNumber();
+        StringReverse sr = new StringReverse();
 
-        String s = "1234";
+        String s = "Zbcdefg";
 
-        boolean solution = sol.solution(s);
-        System.out.println("solution = " + solution);
+        String revers = sr.revers(s);
 
-        boolean b = sol.tryAndCatch(s);
-        System.out.println("b = " + b);
+        System.out.println("revers = " + revers);
 
     }
 }

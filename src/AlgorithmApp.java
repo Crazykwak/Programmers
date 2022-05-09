@@ -1,4 +1,5 @@
 import level1.StringOrNumber;
+import level1.StringPAndY;
 import level1.StringReverse;
 
 import java.util.ArrayList;
@@ -7,13 +8,15 @@ import java.util.Arrays;
 public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
-        StringReverse sr = new StringReverse();
 
-        String s = "Zbcdefg";
+        StringPAndY pAndY = new StringPAndY();
 
-        String revers = sr.revers(s);
+        String s = "ploky";
+        boolean pPoooyY = pAndY.solution(s);
+        System.out.println("pPoooyY = " + pPoooyY);
 
-        System.out.println("revers = " + revers);
+        boolean ramda = pAndY.ramda(s);
+        System.out.println("ramda = " + ramda);
 
     }
 }

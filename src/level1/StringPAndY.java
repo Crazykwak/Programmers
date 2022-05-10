@@ -1,7 +1,5 @@
 package level1;
 
-import java.util.Locale;
-
 public class StringPAndY {
     public boolean solution(String s) {
         boolean answer = true;

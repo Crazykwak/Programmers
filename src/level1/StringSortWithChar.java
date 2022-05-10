@@ -17,11 +17,15 @@ public class StringSortWithChar {
 
         Arrays.sort(answer);
 
-        for(int i = 0; i < strings.length; i++){
-            sb.append(answer[i]);
-            sb.delete(0,1);
-            answer[i] = sb.toString();
-            sb.delete(0, sb.length());
+//        for(int i = 0; i < strings.length; i++){
+//            sb.append(answer[i]);
+//            sb.delete(0,1);
+//            answer[i] = sb.toString();
+//            sb.delete(0, sb.length());
+//        }
+
+        for(int i = 0; i < strings.length; i++) {
+            answer[i] = answer[i].substring(1, answer[i].length());
         }
 
         return answer;

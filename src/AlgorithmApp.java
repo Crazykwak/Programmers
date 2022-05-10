@@ -9,11 +9,10 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        IntegerLess il = new IntegerLess();
-        long price = 3;
-        long money = 20;
-        long count = 4;
-        long solution = il.solution(price, money, count);
+        MinSquare ms = new MinSquare();
+
+        int[][] arr = {{60, 50}, {30, 70}, {60, 30}, {80, 40}};
+        int solution = ms.solution(arr);
         System.out.println("solution = " + solution);
     }
 }

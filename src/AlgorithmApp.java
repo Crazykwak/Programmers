@@ -1,3 +1,4 @@
+import level1.IntegerBetweenIntegerSum;
 import level1.StringSortWithChar;
 import practice.Item;
 
@@ -9,13 +10,10 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        String[] s = {"abce", "abcd", "cdx"};
-        int n = 1;
+        IntegerBetweenIntegerSum ii = new IntegerBetweenIntegerSum();
 
-        StringSortWithChar ss = new StringSortWithChar();
-
-        String[] solution = ss.solution(s, n);
-        System.out.println("solution = " + Arrays.toString(solution));
+        long solution = ii.solution(1, 9);
+        System.out.println("solution = " + solution);
 
     }
 }

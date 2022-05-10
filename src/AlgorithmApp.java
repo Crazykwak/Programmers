@@ -1,6 +1,4 @@
-import level1.ArrayDivisor;
-import level1.IntegerBetweenIntegerSum;
-import level1.StringSortWithChar;
+import level1.*;
 import practice.Item;
 
 import java.util.ArrayList;
@@ -11,14 +9,11 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        IntegerBetweenIntegerSum ii = new IntegerBetweenIntegerSum();
-
-        int[] arr = {5,9,7,10};
-        int n = 5;
-
-        ArrayDivisor ad = new ArrayDivisor();
-        int[] solution = ad.solution(arr, n);
-        System.out.println("solution = " + Arrays.toString(solution));
-
+        IntegerLess il = new IntegerLess();
+        long price = 3;
+        long money = 20;
+        long count = 4;
+        long solution = il.solution(price, money, count);
+        System.out.println("solution = " + solution);
     }
 }

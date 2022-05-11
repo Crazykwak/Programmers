@@ -1,19 +1,18 @@
 package practice;
 
+
 public class Item {
 
     private Long id;
     private String itemName;
     private Integer price;
     private Integer quantity;
+    public String s = "쿠콰콰쾅오";
 
     public Item() {
-        System.out.println("기본 생성자를 호출했다.");
     }
 
     public Item(String itemName, Integer price, Integer quantity) {
-        this();
-        System.out.println("인자를 받는 두번째 생성자도 호출했다.");
         this.itemName = itemName;
         this.price = price;
         this.quantity = quantity;
@@ -62,6 +61,4 @@ public class Item {
         System.out.println("quantity = " + quantity);
         System.out.println("s = " + s);
     }
-
-
 }

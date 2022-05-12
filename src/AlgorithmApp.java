@@ -10,15 +10,12 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int[] n = {1,3,2,5,4};
-        int[] n2 = {2,2,3,3};
+        int left = 13;
+        int right = 17;
 
-        int bud = 9;
-        int bud2 = 10;
+        NumberAndAdditionOfFactors nb = new NumberAndAdditionOfFactors();
 
-        Budget budget = new Budget();
-
-        int solution = budget.solution(n2, bud2);
+        int solution = nb.solution(left, right);
         System.out.println("solution = " + solution);
 
     }

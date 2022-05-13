@@ -10,12 +10,12 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int[] num = {3,1,2,3};
-        int[] num2 = {3,3,3,2,2,4};
-        int[] num3 = {3,3,3,2,2,2};
+        int[] num = {2, 1, 2, 6, 2, 4, 3, 3};
+        int N = 5;
 
-        Phonkemon pm = new Phonkemon();
-        int solution = pm.solution(num);
-        System.out.println("solution = " + solution);
+        Failture fa = new Failture();
+        int[] solution = fa.solution(N, num);
+        System.out.println("solution = " + Arrays.toString(solution));
+
     }
 }

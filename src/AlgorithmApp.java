@@ -10,11 +10,11 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int[] num = {2, 1, 2, 6, 2, 4, 3, 3};
-        int N = 5;
+        int[] answers = {1,3,2,4,2};
 
-        Failture fa = new Failture();
-        int[] solution = fa.solution(N, num);
+        MEGOSA megosa = new MEGOSA();
+
+        int[] solution = megosa.solution(answers);
         System.out.println("solution = " + Arrays.toString(solution));
 
     }

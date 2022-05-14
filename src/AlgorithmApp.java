@@ -10,12 +10,12 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int[] answers = {1,3,2,4,2};
+        String[] p = {"marina", "josipa", "nikola", "vinko", "filipa"};
+        String[] c = {"josipa", "filipa", "marina", "nikola"};
 
-        MEGOSA megosa = new MEGOSA();
-
-        int[] solution = megosa.solution(answers);
-        System.out.println("solution = " + Arrays.toString(solution));
+        NotCompletion nc = new NotCompletion();
+        String solution = nc.solution(p, c);
+        System.out.println("solution = " + solution);
 
     }
 }

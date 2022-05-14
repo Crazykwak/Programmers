@@ -10,13 +10,11 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int n = 3;
-        int[] l = {1,2};
-        int[] res = {2,3};
+        PrimeNumberArr ar = new PrimeNumberArr();
 
-        TrainingCloth tc = new TrainingCloth();
-        int solution = tc.solution(n, l, res);
+        int[] ara = {1,2,7,6,4};
+
+        int solution = ar.solution(ara);
         System.out.println("solution = " + solution);
-
     }
 }

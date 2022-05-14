@@ -8,6 +8,8 @@ public class NotCompletion {
         Arrays.sort(participant);
         Arrays.sort(completion);
 
+        System.out.println("participant = " + Arrays.toString(participant));
+        System.out.println("completion = " + Arrays.toString(completion));
         String answer = "";
         for(int i = 0; i < completion.length; i++) {
             if(!participant[i].equals(completion[i])) {

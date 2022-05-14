@@ -10,12 +10,12 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        String[] p = {"marina", "josipa", "nikola", "vinko", "filipa"};
-        String[] c = {"josipa", "filipa", "marina", "nikola"};
+        int[] ar = {1, 5, 2, 6, 3, 7, };
+        int[][] com = {{2,5,3},{4,4,1},{1,7,3}};
 
-        NotCompletion nc = new NotCompletion();
-        String solution = nc.solution(p, c);
-        System.out.println("solution = " + solution);
+        NumberOfK no = new NumberOfK();
+        int[] solution = no.solution(ar, com);
 
+        System.out.println("solution = " + Arrays.toString(solution));
     }
 }

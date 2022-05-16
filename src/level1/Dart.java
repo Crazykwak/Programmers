@@ -13,14 +13,6 @@ public class Dart {
         String[] split = dartResult.split("");
         ArrayList<String> ar = new ArrayList<>(List.of(split));
 
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < ar.size(); j++) {
-                String s = ar.get(j);
-
-            }
-        }
-
-
         int count = 0;
         ArrayList<Integer> remove = new ArrayList<>();
         for (int i = 0; i < ar.size(); i++) {
@@ -55,8 +47,6 @@ public class Dart {
             ar.remove(n-i);
         }
 
-
-
         if(ar.size() > 3) {
             for(int i = 0; i < ar.size(); i++){
                 String s = ar.get(i);
@@ -66,7 +56,6 @@ public class Dart {
                 }
             }
         }
-
 
         int sum = 0;
         for (int i = 0; i < ar.size(); i++) {

@@ -10,7 +10,7 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        String r = "10D4S10D";
+        String r = "10D10S10D";
         Dart dart = new Dart();
         int solution = dart.solution(r);
         System.out.println("solution = " + solution);

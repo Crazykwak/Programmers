@@ -1,18 +1,17 @@
 import level1.*;
-import practice.Item;
-import practice.Laptop;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        String r = "10D10S10D";
-        Dart dart = new Dart();
-        int solution = dart.solution(r);
-        System.out.println("solution = " + solution);
+        int[] lot = {0, 0, 0, 0, 0, 0};
+        int[] win = {20, 9, 3, 45, 4, 35};
+
+        Lotto lotto = new Lotto();
+        int[] solution = lotto.solution(lot, win);
+        System.out.println("solution = " + Arrays.toString(solution));
+
     }
 }

@@ -9,16 +9,11 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int[][] b = {{0,0,0,0,0}
-                    ,{0,0,1,0,3}
-                    ,{0,2,5,0,1}
-                    ,{4,2,4,4,2}
-                    ,{3,5,1,3,1}};
+        int[] b = {1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5};
+        String h = "right";
 
-        int[] m = {1,5,3,5,1,2,1,4};
-
-        CrainDoll cd = new CrainDoll();
-        int solution = cd.solution(b, m);
+        Keypad keypad = new Keypad();
+        String solution = keypad.solution(b, h);
         System.out.println("solution = " + solution);
 
     }

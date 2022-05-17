@@ -9,25 +9,18 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        List<Member> memberList = new ArrayList<>();
-        memberList.add(new Member(3, "김왕건"));
-        memberList.add(new Member(1, "이성계"));
-        memberList.add(new Member(6, "박수달"));
+        int[][] b = {{0,0,0,0,0}
+                    ,{0,0,1,0,3}
+                    ,{0,2,5,0,1}
+                    ,{4,2,4,4,2}
+                    ,{3,5,1,3,1}};
 
-        Collections.sort(memberList);
+        int[] m = {1,5,3,5,1,2,1,4};
 
-        for (Member member : memberList) {
-            System.out.println("Id = " + member.getId() + " Name = " + member.getName());
-        }
-
-        System.out.println("-".repeat(20));
-
-        MyComparator myComparator = new MyComparator();
-        Collections.sort(memberList, myComparator);
-
-        for (Member member : memberList) {
-            System.out.println("Id = " + member.getId() + " Name = " + member.getName());
-        }
+        CrainDoll cd = new CrainDoll();
+        int solution = cd.solution(b, m);
+        System.out.println("solution = " + solution);
 
     }
 }
+

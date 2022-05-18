@@ -6,7 +6,6 @@ public class ArrestResult {
     public int[] solution(String[] id_list, String[] report, int k) {
         int[] answer = new int[id_list.length];
         Member[] repo = new Member[id_list.length];
-        HashMap<String, String> map = new HashMap<>();
 
         for(int i = 0; i < id_list.length; i++) {
             repo[i] =  new Member(id_list[i]);

@@ -2,14 +2,13 @@ package level2;
 
 public class Fibonazzi {
     public int solution(int n) {
-        Fibo fibo = new Fibo();
-        int answer = (int) fibo.fiboNum(n);
+
+        int answer = (int) fiboNum(n);
 
         return answer;
     }
 
 
-    class Fibo {
         public long fiboNum(int n) {
 
             long[] arr = new long[n];
@@ -22,5 +21,5 @@ public class Fibonazzi {
             return arr[n-1];
 
         }
-    }
+
 }

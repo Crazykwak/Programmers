@@ -1,4 +1,5 @@
 import level1.SecretMap;
+import level2.Matrix;
 import level2.NLCM;
 import practice.SumLambda;
 
@@ -9,11 +10,11 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int[] a = {2,6,8,14};
-        NLCM nlcm = new NLCM();
-        int solution = nlcm.solution(a);
-        System.out.println("solution = " + solution);
-
+        int[][] arr1 = {{1, 4}, {3, 2}, {4, 1}};
+        int[][] arr2 = {{3,3}, {3,3}};
+        Matrix matrix = new Matrix();
+        int[][] solution = matrix.solution(arr1, arr2);
+        System.out.println("solution = " + Arrays.deepToString(solution));
 
     }
 

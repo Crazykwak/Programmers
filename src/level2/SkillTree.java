@@ -1,10 +1,5 @@
 package level2;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-
 public class SkillTree {
     public int solution(String skill, String[] skill_trees) {
         int l = skill_trees.length;

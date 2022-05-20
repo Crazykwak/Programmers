@@ -2,6 +2,6 @@ package practice;
 
 @FunctionalInterface
 public interface SumLambda {
-    public void big();
+    public int big(int[] a);
 
 }

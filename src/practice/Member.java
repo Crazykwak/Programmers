@@ -4,6 +4,15 @@ public class Member implements Comparable<Member>{
 
     private int id;
     private String name;
+    private int age;
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 
     public int getId() {
         return id;
@@ -21,9 +30,10 @@ public class Member implements Comparable<Member>{
         this.name = name;
     }
 
-    public Member(int id, String name) {
+    public Member(int id, String name, int age) {
         this.id = id;
         this.name = name;
+        this.age = age;
     }
 
     @Override

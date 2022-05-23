@@ -8,11 +8,11 @@ public class AlgorithmApp {
         //test 하는 곳
 
 
-        int[] pri = {2, 1, 2, 1, 2, 1, 2, 1};
-        int lo = 2;  // 6
-        Printer pr = new Printer();
-        int solution = pr.solution(pri, lo);
-        System.out.println("solution = " + solution);
+        int[] pri = {95, 90, 99, 99, 80, 99}; // 5 10 1 1 20 1
+        int[] speeds = {1, 1, 1, 1, 1, 1};  // 6
+        FunctionDev fd = new FunctionDev();
+        int[] solution = fd.solution(pri, speeds);
+        System.out.println("solution = " + Arrays.toString(solution));
 
 
     }

@@ -8,9 +8,9 @@ public class AlgorithmApp {
         //test 하는 곳
 
 
-        String s = "baabaa";
-        RemoveStringCouple re = new RemoveStringCouple();
-        int solution = re.solution(s);
+        int[] nums = {9,998}; //
+        MostBigOne mostBigOne = new MostBigOne();
+        String solution = mostBigOne.solution(nums);
         System.out.println("solution = " + solution);
 
 

@@ -8,17 +8,13 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int[] fee = {180, 5000, 10, 600};
-        String[] a = {"05:34 5961 IN", "06:00 0000 IN",
-                "06:34 0000 OUT", "07:59 5961 OUT",
-                "07:59 0148 IN", "18:59 0000 IN",
-                "19:09 0148 OUT", "22:59 5961 IN",
-                "23:00 5961 OUT"};
+        int bl = 10;
+        int weight = 1;
+        int[] truk = {1,1,1,1};
 
-        double n = 15.4;
-        ParkingPrice pp = new ParkingPrice();
-        int[] solution = pp.solution(fee, a);
-        System.out.println("Arrays.toString(solution) = " + Arrays.toString(solution));
+        BridgeTruck bt = new BridgeTruck();
+        int solution = bt.solution(bl, weight, truk);
+        System.out.println("solution = " + solution);
 
     }
 }

@@ -9,14 +9,11 @@ public class AlgorithmApp {
         //test 하는 곳
 
 
-        int[] a = {10, 10, 10, 10, 10};
+        String[][] a = {{"yellowhat", "headgear"}, {"bluesunglasses", "eyewear"}, {"green_turban", "headgear"}};
 
-        HIndex hIndex = new HIndex();
-        int solution = hIndex.solution(a);
+        Camouflage camouflage = new Camouflage();
+        int solution = camouflage.solution(a);
         System.out.println("solution = " + solution);
 
     }
 }
-
-
-

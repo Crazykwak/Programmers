@@ -56,4 +56,58 @@ public class BridgeTruck {
 
         return answer;
     }
+
+    public int solution2(int bridge_length, int weight, int[] truck_weights) {
+        int answer = 1;
+        int count = 0;
+        LinkedList<Truck> work = new LinkedList<>();
+        LinkedList<Truck> wait = new LinkedList<>();
+        for (int truck_weight : truck_weights) {
+            wait.add(new Truck(truck_weight));
+        }
+
+        while ((!work.isEmpty()) || (!wait.isEmpty())) {
+            answer++;
+            if(work.isEmpty()) {
+                Truck poll = wait.poll();
+                work.add(poll);
+                count += poll.weight;
+                continue;
+            }
+            if(!wait.isEmpty() && weight >= (count + wait.peek().weight)) {
+                Truck poll = wait.poll();
+                work.add(poll);
+                count += poll.weight;
+            }
+
+            for (Truck truck : work) {
+                truck.moving();
+            }
+
+            if(work.peek().move >= bridge_length) {
+                Truck poll = work.poll();
+                count -= poll.weight;
+            }
+
+        }
+
+        return answer;
+    }
+
+
+
+    class Truck {
+        int weight;
+        int move;
+
+        public Truck(int weight) {
+            this.weight = weight;
+            this.move = 1;
+        }
+
+        void moving() {
+            this.move++;
+        }
+
+    }
 }

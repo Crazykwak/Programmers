@@ -1,20 +1,26 @@
 import level2.*;
+import practice.Box;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Stack;
+import java.util.*;
 
 
 public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        String[] s = {"classic", "pop", "classic", "classic", "pop"};
-        int[] plays = {500, 600, 150, 800, 2500};
-        BestAlbum ba = new BestAlbum();
+//        int[][] d = {{80, 20}, {50, 40}, {30, 10}};
+//        int k = 80;
+//        Fatigue fatigue = new Fatigue();
+//        int solution = fatigue.solution(k, d);
+//        System.out.println("solution = " + solution);
 
-        int[] solution = ba.solution(s, plays);
-        System.out.println("solution = " + Arrays.toString(solution));
+        ///
+
+        Integer[] boxes = {5,1,4,6,5 ,4,3,2,1,7};
+        Box box = new Box();
+        int i = box.paveBox(boxes);
+        System.out.println("i = " + i);
+
+
     }
 }

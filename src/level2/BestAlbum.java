@@ -18,7 +18,6 @@ public class BestAlbum {
 
         }
         String[] rankG = new String[store.size()];
-        ArrayList <Integer> answer = new ArrayList<>();
         Set<String> keySet = store.keySet();
         HashMap<String, Integer> rank = new HashMap<>();
         for (String s : keySet) {

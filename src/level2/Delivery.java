@@ -6,7 +6,7 @@ public class Delivery {
     public int solution(int N, int[][] road, int K) {
         int answer = 0;
         int[] tmp = new int[N];
-        int max = 5000001;
+        int max = 87654;
         tmp[0] = 0;
         for (int i = 1; i < tmp.length; i++) {
             tmp[i] = max;
@@ -46,7 +46,6 @@ public class Delivery {
             }
 
         }
-        System.out.println("tmp = " + Arrays.toString(tmp));
         long count = Arrays.stream(tmp).filter(e -> e <= K).count();
         answer = (int) count;
         return answer;

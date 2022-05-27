@@ -3,14 +3,14 @@ package level2;
 import java.util.*;
 
 public class BridgeTruck {
-    public int solution(int bridge_length, int weight, int[] truck_weights) {
+    public int solution(int bridge_length, int weight, int[] documents) {
         int answer = 1;
         int count = 0;
         HashMap<Integer, Integer> going = new HashMap<>();
         Stack<Integer> destination = new Stack<>();
         LinkedList<Integer> wait = new LinkedList<>();
 
-        for (int truck : truck_weights) {
+        for (int truck : documents) {
             wait.add(truck);
         }
 
@@ -57,13 +57,13 @@ public class BridgeTruck {
         return answer;
     }
 
-    public int solution2(int bridge_length, int weight, int[] truck_weights) {
+    public int solution2(int bridge_length, int weight, int[] documents) {
         int answer = 0;
         int count = 0;
         LinkedList<Truck> work = new LinkedList<>();
         LinkedList<Truck> wait = new LinkedList<>();
 
-        for (int truck_weight : truck_weights) {
+        for (int truck_weight : documents) {
             wait.add(new Truck(truck_weight));
         }
 

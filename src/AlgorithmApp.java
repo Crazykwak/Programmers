@@ -10,15 +10,13 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int[][] n = {{1,1,0,0},{1,0,0,0},{1,0,0,1},{1,1,1,1}};
-        QuadZip quadZip = new QuadZip();
-        int[] solution = quadZip.solution(n);
-        System.out.println("solution = " + Arrays.toString(solution));
+
+        int[][] a = {{1,2,3,5},{5,6,7,8},{4,3,2,1}};
+        EatLand eatLand = new EatLand();
+        int solution = eatLand.solution(a);
+        System.out.println("solution = " + solution);
 
     }
 }
 
-//{{1,1,0,0},
-// {1,0,0,0},
-// {1,0,0,1},
-// {1,1,1,1}};
+//3

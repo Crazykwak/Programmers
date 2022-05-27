@@ -10,13 +10,15 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int n = 3;
-        int l = 2;
-        int r = 5;
-        N2ArrayCut n2 = new N2ArrayCut();
-        int[] solution = n2.solution(n, l, r);
+        int[][] n = {{1,1,0,0},{1,0,0,0},{1,0,0,1},{1,1,1,1}};
+        QuadZip quadZip = new QuadZip();
+        int[] solution = quadZip.solution(n);
+        System.out.println("solution = " + Arrays.toString(solution));
 
     }
 }
 
-// 1, 2, 3, 2, 2, 3, 3, 3, 3
+//{{1,1,0,0},
+// {1,0,0,0},
+// {1,0,0,1},
+// {1,1,1,1}};

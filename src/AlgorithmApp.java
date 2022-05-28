@@ -11,9 +11,10 @@ public class AlgorithmApp {
         //test 하는 곳
 
 
-        int[][] a = {{1,2,3,5},{5,6,7,8},{4,3,2,1}};
-        EatLand eatLand = new EatLand();
-        int solution = eatLand.solution(a);
+        String number = "1924";
+        int k = 2;
+        BigNumberMake bigNumberMake = new BigNumberMake();
+        String solution = bigNumberMake.solution(number, k);
         System.out.println("solution = " + solution);
 
     }

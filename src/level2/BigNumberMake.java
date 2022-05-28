@@ -1,18 +1,16 @@
 package level2;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class BigNumberMake {
+
+    ArrayList<String> list = new ArrayList<>();
+
     public String solution(String number, int k) {
-        String answer = "";
 
-        int n = number.length() - k;
-
-
-
-
-        return answer;
+        return "";
     }
-
-
 
 
 

@@ -9,14 +9,11 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int[][] s = {
-                {0, 0, 1},
-                {1, 1, 1},
-                {1, 0, 0}};
-        String o = "UUUDD";
-        BoardGame boardGame = new BoardGame();
-        Integer integer = boardGame.boardGame(s, o);
-        System.out.println("integer = " + integer);
+        int target = 50;
+        int[] type = {10,20,50};
+        SafeBox safeBox = new SafeBox();
+        long ocean = safeBox.ocean(target, type);
+        System.out.println("ocean = " + ocean);
 
 
     }

@@ -9,11 +9,11 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int k = 121;
-        ConviniCoin conviniCoin = new ConviniCoin();
-        int i = conviniCoin.partTimeJob(k);
+        int[] stuff = {60, 73, 80, 87, 103, 109, 119, 123, 128, 129, 136, 146, 153, 168, 182};
+        int limited = 200;
+        Bagpack bagpack = new Bagpack();
+        int i = bagpack.movingStuff(stuff, limited);
         System.out.println("i = " + i);
-
 
 
     }

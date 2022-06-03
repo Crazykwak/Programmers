@@ -9,11 +9,12 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int target = 50;
-        int[] type = {10,20,50};
-        SafeBox safeBox = new SafeBox();
-        long ocean = safeBox.ocean(target, type);
-        System.out.println("ocean = " + ocean);
+        String[] dishes = {"pasta", "oysterSoup", "beefRibs", "tteokbokki"};
+        HomeMeal homeMeal = new HomeMeal();
+        ArrayList<String[]> strings = homeMeal.missHouseMeal(dishes);
+        for (String[] string : strings) {
+            System.out.println("string = " + Arrays.toString(string));
+        }
 
 
     }

@@ -9,12 +9,11 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        String[] dishes = {"pasta", "oysterSoup", "beefRibs", "tteokbokki"};
-        HomeMeal homeMeal = new HomeMeal();
-        ArrayList<String[]> strings = homeMeal.missHouseMeal(dishes);
-        for (String[] string : strings) {
-            System.out.println("string = " + Arrays.toString(string));
-        }
+
+        int[] a = {1,2,3,2,3};
+        StockPrice stockPrice = new StockPrice();
+        int[] solution = stockPrice.solution(a);
+        System.out.println("solution = " + Arrays.toString(solution));
 
 
     }

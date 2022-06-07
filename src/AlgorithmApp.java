@@ -10,10 +10,10 @@ public class AlgorithmApp {
         //test 하는 곳
 
 
-        int[] a = {1,2,3,2,3};
-        StockPrice stockPrice = new StockPrice();
-        int[] solution = stockPrice.solution(a);
-        System.out.println("solution = " + Arrays.toString(solution));
+        int[] a = {70, 50, 80, 50};
+        Boat boat = new Boat();
+        int solution = boat.solution(a, 100);
+        System.out.println("solution = " + solution);
 
 
     }

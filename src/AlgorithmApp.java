@@ -9,11 +9,10 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-
-        int[] a = {70, 50, 80, 50};
-        Boat boat = new Boat();
-        int solution = boat.solution(a, 100);
-        System.out.println("solution = " + solution);
+        String s = "454793";
+        InsertDash insertDash = new InsertDash();
+        String s1 = insertDash.insertDash(s);
+        System.out.println("s1 = " + s1);
 
 
     }

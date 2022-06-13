@@ -10,10 +10,10 @@ public class AlgorithmApp {
         //test 하는 곳
 
 
-        String[] input = {"hi", "world"};
-        ReadVertically readVertically = new ReadVertically();
-        String solution = readVertically.solution(input);
-        System.out.println("solution = " + solution);
+        LineUp lineUp = new LineUp();
+        int[] solution = lineUp.solution(20, 390700800);
+        System.out.println("solution = " + Arrays.toString(solution));
+
 
 
     }

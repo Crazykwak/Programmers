@@ -9,11 +9,9 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        String str1 = "FRANCE";
-        String str2 = "french";
-
-        NewsClustering newsClustering = new NewsClustering();
-        int solution = newsClustering.solution(str1, str2);
+        int n =4;
+        LongJump longJump = new LongJump();
+        long solution = longJump.solution(n);
         System.out.println("solution = " + solution);
 
 

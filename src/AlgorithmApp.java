@@ -9,10 +9,10 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int n = 5;
-        JumpAndTeleport jumpAndTeleport = new JumpAndTeleport();
-        int solution = jumpAndTeleport.solution(n);
-        System.out.println("solution = " + solution);
+        String s = "110010101001";
+        BitTrans bitTrans = new BitTrans();
+        int[] solution = bitTrans.solution(s);
+        System.out.println("solution = " + Arrays.toString(solution));
 
 
     }

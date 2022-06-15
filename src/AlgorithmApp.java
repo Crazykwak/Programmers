@@ -9,10 +9,11 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int n =4;
-        LongJump longJump = new LongJump();
-        long solution = longJump.solution(n);
-        System.out.println("solution = " + solution);
+        String s = "TOBEORNOTTOBEORTOBEORNOT";
+
+        Compression compression = new Compression();
+        int[] solution = compression.solution(s);
+        System.out.println("solution = " + Arrays.toString(solution));
 
 
     }

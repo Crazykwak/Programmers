@@ -9,13 +9,11 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int num = 2;
-        SquareRoot squareRoot = new SquareRoot();
-        String s = squareRoot.computeSquareRoot(num);
-        System.out.println("s = " + s);
-
+        String p = "()))((()";
+        RightGualho rightGualho = new RightGualho();
+        String solution = rightGualho.solution(p);
+        System.out.println("solution = " + solution);
 
 
     }
 }
-

@@ -9,11 +9,10 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        String[] s =
-                {"abc000123", "abc123"};
-
-        FileNameCompa fileNameCompa = new FileNameCompa();
-        String[] solution = fileNameCompa.solution(s);
+        String[] orders = {"XYZ", "XWY", "WXA"};
+        int[] course = {2,3,5};
+        MenuRenewal menuRenewal = new MenuRenewal();
+        String[] solution = menuRenewal.solution(orders, course);
         System.out.println("solution = " + Arrays.toString(solution));
 
     }

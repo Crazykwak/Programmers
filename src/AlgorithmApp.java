@@ -9,14 +9,12 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int n = 8;
-        int a = 4;
-        int b = 5;
+        String[] s =
+                {"abc000123", "abc123"};
 
-        Tournament tournament = new Tournament();
-        int solution = tournament.solution(n, a, b);
-        System.out.println("solution = " + solution);
-
+        FileNameCompa fileNameCompa = new FileNameCompa();
+        String[] solution = fileNameCompa.solution(s);
+        System.out.println("solution = " + Arrays.toString(solution));
 
     }
 }

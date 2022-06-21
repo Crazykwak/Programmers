@@ -9,10 +9,10 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        String[] orders = {"XYZ", "XWY", "WXA"};
-        int[] course = {2,3,5};
-        MenuRenewal menuRenewal = new MenuRenewal();
-        String[] solution = menuRenewal.solution(orders, course);
+        String[] words = {"hello", "one", "even", "never", "now", "world", "draw"};
+        int n = 2;
+        EnglishWord englishWord = new EnglishWord();
+        int[] solution = englishWord.solution(n, words);
         System.out.println("solution = " + Arrays.toString(solution));
 
     }

@@ -9,11 +9,12 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        String[] words = {"hello", "one", "even", "never", "now", "world", "draw"};
-        int n = 2;
-        EnglishWord englishWord = new EnglishWord();
-        int[] solution = englishWord.solution(n, words);
-        System.out.println("solution = " + Arrays.toString(solution));
+
+
+        String s = "50*6-3*2";
+        MaxAbs maxAbs = new MaxAbs();
+        long solution = maxAbs.solution(s);
+        System.out.println("solution = " + solution);
 
     }
 }

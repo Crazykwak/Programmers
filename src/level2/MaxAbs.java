@@ -56,8 +56,9 @@ public class MaxAbs {
                     }
                     copyEx.remove(where);
                 }
-                cal = copyNum.get(0);
+
             }
+            cal = copyNum.get(0);
             result.add(Math.abs(cal));
         }
 

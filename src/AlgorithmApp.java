@@ -9,10 +9,13 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int[] out = {1,2,3,4,5};
-        BubbleSort bubble = new BubbleSort();
-        int[] ints = bubble.bubbleSort(out);
-        System.out.println("ints = " + Arrays.toString(ints));
+        int n = 2;
+        int t = 4;
+        int m = 2;
+        int p = 1;
+        NNumberGame game = new NNumberGame();
+        String solution = game.solution(n, t, m, p);
+        System.out.println("solution = " + solution);
 
     }
 }

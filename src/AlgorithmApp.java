@@ -9,13 +9,10 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int n = 2;
-        int t = 4;
-        int m = 2;
-        int p = 1;
-        NNumberGame game = new NNumberGame();
-        String solution = game.solution(n, t, m, p);
-        System.out.println("solution = " + solution);
+        int n = 40;
+        RecFibo recFibo = new RecFibo();
+        long fibonacci = recFibo.fibonacci(n);
+        System.out.println("fibonacci = " + fibonacci);
 
     }
 }

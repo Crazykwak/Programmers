@@ -1,5 +1,6 @@
 import level2.*;
 import level3.FarAwayNode;
+import level3.ShuttleBus;
 import level3.ThanksTraffic;
 import practice.*;
 
@@ -11,15 +12,13 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        TreeDFS treeDFS = new TreeDFS();
-        TreeDFS.tree root = new TreeDFS.tree("1");
-        TreeDFS.tree rootChild1 = root.addChildNode(new TreeDFS.tree("2"));
-        TreeDFS.tree rootChild2 = root.addChildNode(new TreeDFS.tree("3"));
-        TreeDFS.tree left1 = rootChild1.addChildNode(new TreeDFS.tree("4"));
-        TreeDFS.tree left2 = rootChild1.addChildNode(new TreeDFS.tree("5"));
-
-        ArrayList<String> dfs = treeDFS.dfs(root);
-        System.out.println("dfs = " + dfs);
+        String[] s = {"23:59"};
+        int n = 1;
+        int t = 1;
+        int m = 1;
+        ShuttleBus shuttleBus = new ShuttleBus();
+        String solution = shuttleBus.solution(n, t, m, s);
+        System.out.println("solution = " + solution);
 
 
     }

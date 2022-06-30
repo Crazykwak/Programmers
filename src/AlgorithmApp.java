@@ -25,9 +25,12 @@ public class AlgorithmApp {
         System.out.println("solution = " + solution);
 
 
-        String s1 = "02";
-        String s2 = "012";
+        PowNotMath powNotMath = new PowNotMath();
+        long power = powNotMath.power(3, 40);
+        System.out.println("power = " + power);
 
+        long a = (long) (Math.pow(3, 1) % 94906249);
+        System.out.println("a = " + a);
 
 
     }

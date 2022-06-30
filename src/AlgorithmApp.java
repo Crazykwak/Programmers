@@ -11,26 +11,15 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        String[][] s = {
-                {"100","ryan","music","2"},
-                {"200","apeach","math","2"},
-                {"300","tube","computer","3"},
-                {"400","con","computer","4"},
-                {"500","muzi","music","3"},
-                {"600","apeach","music","2"}
-        };
+        TreeDFS treeDFS = new TreeDFS();
+        TreeDFS.tree root = new TreeDFS.tree("1");
+        TreeDFS.tree rootChild1 = root.addChildNode(new TreeDFS.tree("2"));
+        TreeDFS.tree rootChild2 = root.addChildNode(new TreeDFS.tree("3"));
+        TreeDFS.tree left1 = rootChild1.addChildNode(new TreeDFS.tree("4"));
+        TreeDFS.tree left2 = rootChild1.addChildNode(new TreeDFS.tree("5"));
 
-        CandidateKey candidateKey = new CandidateKey();
-        int solution = candidateKey.solution(s);
-        System.out.println("solution = " + solution);
-
-
-        PowNotMath powNotMath = new PowNotMath();
-        long power = powNotMath.power(3, 40);
-        System.out.println("power = " + power);
-
-        long a = (long) (Math.pow(3, 1) % 94906249);
-        System.out.println("a = " + a);
+        ArrayList<String> dfs = treeDFS.dfs(root);
+        System.out.println("dfs = " + dfs);
 
 
     }

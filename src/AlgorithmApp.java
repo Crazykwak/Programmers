@@ -12,13 +12,9 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        String[] s = {"23:59"};
-        int n = 1;
-        int t = 1;
-        int m = 1;
-        ShuttleBus shuttleBus = new ShuttleBus();
-        String solution = shuttleBus.solution(n, t, m, s);
-        System.out.println("solution = " + solution);
+        
+
+
 
 
     }

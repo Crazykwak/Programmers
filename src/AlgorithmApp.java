@@ -12,10 +12,14 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        
-
-
+        String s = "[(]{)}";
+        BalanceBrackets balanceBrackets = new BalanceBrackets();
+        boolean b = balanceBrackets.balancedBrackets(s);
+        System.out.println("b = " + b);
 
 
     }
 }
+
+// 1 0 1
+// 1 0 0

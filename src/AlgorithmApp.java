@@ -12,10 +12,12 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        String s = "[(]{)}";
-        BalanceBrackets balanceBrackets = new BalanceBrackets();
-        boolean b = balanceBrackets.balancedBrackets(s);
-        System.out.println("b = " + b);
+        String[] data = {"N~F=0", "R~T>2"};
+        int n = 2;
+
+        TakePicture takePicture = new TakePicture();
+        int solution = takePicture.solution(n, data);
+        System.out.println("solution = " + solution);
 
 
     }

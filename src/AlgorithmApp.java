@@ -12,16 +12,14 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        String[] data = {"N~F=0", "R~T>2"};
-        int n = 2;
+        int[] rotated = {10, 11, 12, 3, 6, 7, 8, 9};
+        int target = 11;
 
-        TakePicture takePicture = new TakePicture();
-        int solution = takePicture.solution(n, data);
-        System.out.println("solution = " + solution);
+        RotatedArraySearch rotatedArraySearch = new RotatedArraySearch();
+        int i = rotatedArraySearch.rotatedArraySearch(rotated, target);
+        System.out.println("i = " + i);
 
 
     }
 }
 
-// 1 0 1
-// 1 0 0

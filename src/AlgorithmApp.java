@@ -12,35 +12,10 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int[][] picture = {
-                {1, 1, 1, 0},
-                {1, 2, 2, 0},
-                {1, 0, 0, 1},
-                {0, 0, 0, 1},
-                {0, 0, 0, 3},
-                {0, 0, 0, 3}};
-        int m = 6;
-        int n = 4;
-        int[][] picture2 = {
-        {0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0},
-        {0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0},
-        {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0},
-        {0, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 0},
-        {0, 1, 1, 1, 2, 1, 2, 1, 1, 2, 1, 2, 1, 1, 1, 0},
-        {0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0},
-        {0, 1, 3, 3, 3, 1, 1, 1, 1, 1, 1, 3, 3, 3, 1, 0},
-        {0, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 0},
-        {0, 0, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 0, 0},
-        {0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0},
-        {0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0}};
-        int m2 = 13;
-        int n2 = 16;
-
-        ColoringBook coloringBook = new ColoringBook();
-        int[] solution2 = coloringBook.solution(m2, n2, picture2);
-        System.out.println("solution2 = " + Arrays.toString(solution2));
+        int n = 6;
+        TriSnail triSnail = new TriSnail();
+        int[] solution = triSnail.solution(n);
+        System.out.println("solution = " + Arrays.toString(solution));
 
 
     }

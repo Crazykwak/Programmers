@@ -12,12 +12,14 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int[] rotated = {10, 11, 12, 3, 6, 7, 8, 9};
-        int target = 11;
+        String s = "abc";
+        String s2 = "bac";
+        PowerSet powerSet = new PowerSet();
+        ArrayList<String> strings = powerSet.powerSet(s);
+        System.out.println("strings = " + strings);
 
-        RotatedArraySearch rotatedArraySearch = new RotatedArraySearch();
-        int i = rotatedArraySearch.rotatedArraySearch(rotated, target);
-        System.out.println("i = " + i);
+        ArrayList<String> strings1 = powerSet.powerSet(s2);
+        System.out.println("strings1 = " + strings1);
 
 
     }

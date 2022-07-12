@@ -12,20 +12,10 @@ import java.util.stream.Collectors;
 public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
-        int[][] room = {
-                {0, 0, 0, 0, 0, 0},
-                {0, 1, 1, 0, 1, 0},
-                {0, 1, 0, 0, 0, 0},
-                {0, 0, 1, 1, 1, 0},
-                {1, 0, 0, 0, 0, 0}
-        };
-
-        int[] src = {4, 2};
-        int[] dst = {2, 2};
-
-        RobotBFS robotBFS = new RobotBFS();
-        int i = robotBFS.robotPath(room, src, dst);
-        System.out.println("i = " + i);
+        int n = 5000;
+        ThreeXNTile threeXNTile = new ThreeXNTile();
+        long solution = threeXNTile.solution(n);
+        System.out.println("solution = " + solution);
 
     }
 }

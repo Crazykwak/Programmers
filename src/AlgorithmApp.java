@@ -12,20 +12,10 @@ import java.util.stream.Collectors;
 public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
-        int[][] matrix = {
-                {1, 2, 3, 4},
-                {5, 6, 7, 8},
-                {9, 10, 11, 12},
-                {13, 14, 15, 16}
-        };
-        int K = 3;
-
-        RotateMatrix rotateMatrix = new RotateMatrix();
-        int[][] ints = rotateMatrix.rotateMatrix(matrix, K);
-
-        for (int[] anInt : ints) {
-            System.out.println(Arrays.toString(anInt));
-        }
+        int[] arr = {5,9,4,2,1,7,8,6,4,3};
+        QuickSort sort = new QuickSort();
+        int[] ints = sort.quickSort(arr);
+        System.out.println("ints = " + Arrays.toString(ints));
 
     }
 }

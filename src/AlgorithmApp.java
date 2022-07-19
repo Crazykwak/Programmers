@@ -15,9 +15,12 @@ public class AlgorithmApp {
 
         int[] a = {1, 2, 43, 100, 21};
 
-        RadixSort sort = new RadixSort();
-        int[] ints = sort.radixSort(a);
-        System.out.println("ints = " + Arrays.toString(ints));
+
+        int brown = 8;
+        int yellow = 1;
+        Carpet carpet = new Carpet();
+        int[] solution = carpet.solution(brown, yellow);
+        System.out.println("solution = " + Arrays.toString(solution));
 
 
     }

@@ -15,8 +15,8 @@ public class AlgorithmApp {
 
         int[] a = {1, 2, 43, 100, 21};
 
-        InsertionSort sort = new InsertionSort();
-        int[] ints = sort.insertionSort(a);
+        RadixSort sort = new RadixSort();
+        int[] ints = sort.radixSort(a);
         System.out.println("ints = " + Arrays.toString(ints));
 
 

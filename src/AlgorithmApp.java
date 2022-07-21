@@ -15,13 +15,9 @@ public class AlgorithmApp {
 
         int[] a = {1, 2, 43, 100, 21};
 
-
-        int brown = 8;
-        int yellow = 1;
-        Carpet carpet = new Carpet();
-        int[] solution = carpet.solution(brown, yellow);
-        System.out.println("solution = " + Arrays.toString(solution));
-
+        MergeSort mergeSort = new MergeSort();
+        int[] ints = mergeSort.mergeSort(a);
+        System.out.println("ints = " + Arrays.toString(ints));
 
     }
 }

@@ -15,8 +15,8 @@ public class AlgorithmApp {
 
         int[] a = {1, 2, 43, 100, 21};
 
-        MergeSort mergeSort = new MergeSort();
-        int[] ints = mergeSort.mergeSort(a);
+        HeapSort heapSort = new HeapSort();
+        int[] ints = heapSort.heapSort(a);
         System.out.println("ints = " + Arrays.toString(ints));
 
     }

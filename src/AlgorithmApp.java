@@ -13,11 +13,11 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int[] a = {1, 2, 43, 100, 21};
-
-        HeapSort heapSort = new HeapSort();
-        int[] ints = heapSort.heapSort(a);
-        System.out.println("ints = " + Arrays.toString(ints));
+        int curPwd = 1009;
+        int newPwd = 1171;
+        PrimePassword primePassword = new PrimePassword();
+        int answer = primePassword.primePassword(curPwd, newPwd);
+        System.out.println("answer = " + answer);
 
     }
 }

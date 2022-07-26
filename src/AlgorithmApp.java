@@ -13,11 +13,11 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int curPwd = 1009;
-        int newPwd = 1171;
-        PrimePassword primePassword = new PrimePassword();
-        int answer = primePassword.primePassword(curPwd, newPwd);
-        System.out.println("answer = " + answer);
+        int[] arr = new int[]{3, 6, 7, 8, 9, 21, 31, 32};
+        int target = 25;
 
+        BinarySearch binarySearch = new BinarySearch();
+        int i = binarySearch.binarySearch(arr, target);
+        System.out.println("i = " + i);
     }
 }

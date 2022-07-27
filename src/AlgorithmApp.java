@@ -13,11 +13,11 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int[] arr = new int[]{3, 6, 7, 8, 9, 21, 31, 32};
-        int target = 25;
+        int[] arr1 = new int[]{1, 4, 8, 10};
+        int[] arr2 = new int[]{2, 3, 5, 9};
 
-        BinarySearch binarySearch = new BinarySearch();
-        int i = binarySearch.binarySearch(arr, target);
-        System.out.println("i = " + i);
+        GetItemFromTwo getItemFromTwo = new GetItemFromTwo();
+        int itemFromTwoSortedArrays = getItemFromTwo.getItemFromTwoSortedArrays(arr1, arr2, 6);
+        System.out.println("itemFromTwoSortedArrays = " + itemFromTwoSortedArrays);
     }
 }

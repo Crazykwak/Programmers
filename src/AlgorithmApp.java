@@ -1,8 +1,5 @@
 import level2.*;
-import level3.DoublePriorityQueue;
-import level3.FarAwayNode;
-import level3.ShuttleBus;
-import level3.ThanksTraffic;
+import level3.*;
 import practice.*;
 
 import java.time.LocalDateTime;
@@ -14,11 +11,11 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        String[] operation =
-                {"I 16", "I -5643", "D -1", "D 1", "D 1", "I 123", "D -1"};
+        String[][] tickets =
+                {{"ICN", "SFO"}, {"ICN", "ATL"}, {"SFO", "ATL"}, {"ATL", "ICN"}, {"ATL","SFO"}};
 
-        DoublePriorityQueue priorityQueue = new DoublePriorityQueue();
-        int[] solution = priorityQueue.solution(operation);
+        TripWay tripWay = new TripWay();
+        String[] solution = tripWay.solution(tickets);
         System.out.println("solution = " + Arrays.toString(solution));
     }
 }

@@ -13,16 +13,20 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        Character[][] matrix = new Character[][]{
-                {'T', 'y', 'r', 'i'},
-                {'i', 's', 't', 'o'},
-                {'n', 'r', 'e', 'n'},
-                {'n', 'a', 'L', ' '}
+        int[][] room = new int[][]{
+                {0, 0, 0, 0},
+                {0, 1, 1, 0},
+                {0, 1, 0, 0},
+                {0, 0, 1, 1},
         };
 
-        Spiral spiral = new Spiral();
-        String s = spiral.spiralTraversal(matrix);
-        System.out.println("s = " + s);
+        int[] src = new int[]{3, 0};
+        int sDir = 3;
+        int[] dst = new int[]{2, 2};
+        int dDir = 2;
+
+        int i = RobotPath2.robotPath2(room, src, sDir, dst, dDir);
+        System.out.println("i = " + i);
 
     }
 }

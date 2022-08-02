@@ -11,11 +11,9 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        String[][] tickets =
-                {{"ICN", "SFO"}, {"ICN", "ATL"}, {"SFO", "ATL"}, {"ATL", "ICN"}, {"ATL","SFO"}};
-
-        TripWay tripWay = new TripWay();
-        String[] solution = tripWay.solution(tickets);
-        System.out.println("solution = " + Arrays.toString(solution));
+        int total = 4;
+        int[] coins = new int[]{1, 2, 3};
+        int i = CoinChange.coinChange(total, coins);
+        System.out.println("i = " + i);
     }
 }

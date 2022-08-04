@@ -11,9 +11,9 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        int total = 4;
-        int[] coins = new int[]{1, 2, 3};
-        int i = CoinChange.coinChange(total, coins);
-        System.out.println("i = " + i);
+        String signs = ">,<,>";
+        InequalityNumber inequalityNumber = new InequalityNumber();
+        long l = inequalityNumber.inequalityNumber(signs);
+        System.out.println("l = " + l);
     }
 }

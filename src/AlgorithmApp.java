@@ -11,9 +11,14 @@ public class AlgorithmApp {
     public static void main(String[] args) {
         //test 하는 곳
 
-        String signs = ">,<,>";
-        InequalityNumber inequalityNumber = new InequalityNumber();
-        long l = inequalityNumber.inequalityNumber(signs);
-        System.out.println("l = " + l);
+        int[] set = new int[]{20, 80, 99, 27, 35};
+        int bound = 100;
+
+        SubsetSum subsetSum = new SubsetSum();
+
+        int i = subsetSum.subsetSum(set, bound);
+        System.out.println("i = " + i);
+
+
     }
 }

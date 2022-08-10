@@ -35,33 +35,52 @@ public class DoublePriorityQueue {
                 return;
             }
 
-            int length = queue.size();
+            if (queue.size() == 1) {
+                if (n > queue.get(0)) {
+                    queue.add(n);
+                } else {
+                    queue.add(0, n);
+                }
+                return;
+            }
+
+            int length = queue.size() - 1;
             int half = queue.size() / 2;
             int idx = half;
             int halfNum = queue.get(half);
 
             if (n > halfNum) {
-                idx = binarySearch(half + 1, length, n);
+                idx = binarySearch(half, length, n);
             } else if (n < halfNum){
-                idx = binarySearch(0, half - 1, n);
+                idx = binarySearch(0, half-1, n);
             }
 
             queue.add(idx, n);
         }
 
         private int binarySearch(int start, int end, int target) {
-            if (start >= end) {
-                return start;
+            if (end - start <= 1) {
+                int startNum = queue.get(start);
+                int endNum = queue.get(end);
+
+                if (target > startNum && target < endNum) {
+                    return end;
+                } else if (target <= startNum) {
+                    return start;
+                } else {
+                    return end+1;
+                }
             }
+
             int half = (start + end) / 2;
             int halfNum = queue.get(half);
 
             if (target == halfNum) {
                 return half;
             } else if (target > halfNum) {
-                return binarySearch(half + 1, end, target);
+                return binarySearch(half, end, target);
             } else {
-                return binarySearch(start, half - 1, target);
+                return binarySearch(start, half-1, target);
             }
         }
 

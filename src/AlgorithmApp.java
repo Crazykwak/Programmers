@@ -84,15 +84,14 @@ public class AlgorithmApp {
 //        System.out.println("solution = " + solution);
         //solution = 6
 
-        Goldybach goldybach = new Goldybach();
-        try {
-            long before = System.currentTimeMillis();
-            goldybach.solution();
-            long after = System.currentTimeMillis();
-            System.out.println("(after-before) = " + (after-before));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        int[] arr = new int[] {1,3,2,7,9,11};
+        int[][] range = new int[][] {
+                {1, 4},
+                {0, 3}
+        };
+
+        int[] ints = RangeMinimum.rangeMinimum(arr, range);
+        System.out.println("ints = " + Arrays.toString(ints));
 
     }
 }

@@ -85,10 +85,7 @@ public class AlgorithmApp {
         //solution = 6
 
 
-        int[] arr = new int[] {2,2,1,4,3};
-        LargestRectangularArea largestRectangularArea = new LargestRectangularArea();
-        int i = largestRectangularArea.largestRectangularArea(arr);
-        System.out.println("answer = " + i);
+        HanoiTop.hanoi(3);
 
     }
 }

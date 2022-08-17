@@ -86,7 +86,7 @@ public class AlgorithmApp {
 
 
         try {
-            CutLine.cutLine();
+            Statistics.statistics();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

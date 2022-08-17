@@ -85,7 +85,18 @@ public class AlgorithmApp {
         //solution = 6
 
 
-        HanoiTop.hanoi(3);
+        String[] village = new String[] {
+                "0101",
+                "0111",
+                "0110",
+                "0100"};
+
+
+        int row = 1;
+        int col = 2;
+        GossipProtocol gossipProtocol = new GossipProtocol();
+        int answer = gossipProtocol.gossipProtocol(village, row, col);
+        System.out.println("answer = " + answer);
 
     }
 }

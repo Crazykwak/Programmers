@@ -85,7 +85,7 @@ public class AlgorithmApp {
         //solution = 6
 
 
-        SortInside.solution();
+        CoordinateSort.solution();
 
     }
 }

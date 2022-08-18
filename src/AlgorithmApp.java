@@ -84,8 +84,11 @@ public class AlgorithmApp {
 //        System.out.println("solution = " + solution);
         //solution = 6
 
+        long before = System.currentTimeMillis();
+        CoordinateCompress.solution();
+        long after = System.currentTimeMillis();
 
-        AgeSort.solution();
+        System.out.println((after - before) + " ms");
 
     }
 }

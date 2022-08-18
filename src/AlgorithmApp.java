@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 
 public class AlgorithmApp {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         //test 하는 곳
 
         // 토스 1번
@@ -85,11 +85,7 @@ public class AlgorithmApp {
         //solution = 6
 
 
-        try {
-            Statistics.statistics();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        SortInside.solution();
 
     }
 }

@@ -84,11 +84,20 @@ public class AlgorithmApp {
 //        System.out.println("solution = " + solution);
         //solution = 6
 
-        long before = System.currentTimeMillis();
-        CoordinateCompress.solution();
-        long after = System.currentTimeMillis();
+        int[][] image = new int[][]{
+                {0, 0, 0, 0, 1, 1, 0, 0},
+                {0, 0, 0, 0, 1, 1, 0, 0},
+                {0, 0, 0, 0, 1, 1, 1, 0},
+                {0, 0, 0, 0, 1, 1, 1, 0},
+                {1, 1, 1, 1, 0, 0, 0, 0},
+                {1, 1, 1, 1, 0, 0, 0, 0},
+                {1, 1, 1, 1, 1, 0, 1, 1},
+                {1, 1, 1, 1, 0, 1, 1, 1}
+        };
 
-        System.out.println((after - before) + " ms");
+        Decompression decompression = new Decompression();
+        String solution = decompression.decompression(image);
+        System.out.println("solution = " + solution);
 
     }
 }

@@ -25,7 +25,6 @@ public class CountIslands {
                     answer++;
                     queue.add(new int[] {i, j});
                     visited[i][j] = true;
-                    System.out.println("i = " + i + " j = " + j);
                     while (!queue.isEmpty()) {
                         int[] poll = queue.poll();
                         int y = poll[0];

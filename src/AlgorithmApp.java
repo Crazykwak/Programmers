@@ -84,20 +84,17 @@ public class AlgorithmApp {
 //        System.out.println("solution = " + solution);
         //solution = 6
 
-        int[][] image = new int[][]{
-                {0, 0, 0, 0, 1, 1, 0, 0},
-                {0, 0, 0, 0, 1, 1, 0, 0},
-                {0, 0, 0, 0, 1, 1, 1, 0},
-                {0, 0, 0, 0, 1, 1, 1, 0},
-                {1, 1, 1, 1, 0, 0, 0, 0},
-                {1, 1, 1, 1, 0, 0, 0, 0},
-                {1, 1, 1, 1, 1, 0, 1, 1},
-                {1, 1, 1, 1, 0, 1, 1, 1}
+        char[][] grid = new char[][]{
+                {'0', '1', '1', '1', '0'},
+                {'0', '1', '0', '0', '0'},
+                {'0', '0', '0', '1', '0'},
+                {'1', '1', '0', '1', '0'},
+                {'1', '1', '0', '1', '0'}
         };
 
-        Decompression decompression = new Decompression();
-        String solution = decompression.decompression(image);
-        System.out.println("solution = " + solution);
+        CountIslands countIslands = new CountIslands();
+        int i = countIslands.countIslands(grid);
+        System.out.println("i = " + i);
 
     }
 }

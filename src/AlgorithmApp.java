@@ -14,8 +14,7 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-       SymmetricDifference.solution();
-
+        Queue2.solution();
 
 
     }

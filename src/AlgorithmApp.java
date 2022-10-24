@@ -14,7 +14,7 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        ArrayCount.solution();
+        NotHomeWork.solution();
 
 
     }

@@ -1,4 +1,5 @@
 import level0.OngRE;
+import level1.Coke;
 import level1.FoodFighter;
 import level1.MakeHamburger;
 import level1.OngRE2;
@@ -32,10 +33,12 @@ public class AlgorithmApp {
 //        long diffTime = after - before;
 //        System.out.println("diffTime = " + diffTime);
 
-        String[] babbling = {"ayaye", "uuu", "yeayaye", "yemawoo", "ayaayaa"};
+        int a = 3;
+        int b = 1;
+        int n = 20;
 
-        OngRE2 ongRE2 = new OngRE2();
-        int solution = ongRE2.solution(babbling);
+        Coke coke = new Coke();
+        int solution = coke.solution(a, b, n);
         System.out.println("solution = " + solution);
 
     }

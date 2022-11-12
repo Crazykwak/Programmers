@@ -1,5 +1,6 @@
 import backjun.*;
 import backjun.Stack;
+import level1.FruitsSeller;
 import level2.*;
 import level3.*;
 import practice.*;
@@ -15,7 +16,14 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        Gualho2.solution();
+        int k = 4;
+        int m = 3;
+        int[] score = {4,1,2,2,4,4,4,4,1,2,4,2};
+
+        FruitsSeller fruitsSeller = new FruitsSeller();
+
+        int result = fruitsSeller.solution(k, m, score);
+        System.out.println("result = " + result);
 
 
     }

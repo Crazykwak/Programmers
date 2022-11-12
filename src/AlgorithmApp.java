@@ -1,3 +1,4 @@
+import level0.OngRE;
 import level1.FoodFighter;
 import level2.NumberCardDivide;
 
@@ -8,10 +9,10 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        int[] food = {1,3,4,6};
+        String[] babbling = {"ayaye", "uuuma", "ye", "yemawoo", "ayaa"};
 
-        FoodFighter foodFighter = new FoodFighter();
-        String result = foodFighter.solution(food);
+        OngRE ongRE = new OngRE();
+        int result = ongRE.solution(babbling);
         System.out.println("result = " + result);
 
 

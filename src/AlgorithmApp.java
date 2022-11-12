@@ -2,6 +2,7 @@ import level0.OngRE;
 import level1.*;
 import level2.NightWalk;
 import level2.NumberCardDivide;
+import level2.ParcelBox;
 import level2.RollCakeDivide;
 import level3.ComeBackHome;
 import level3.Lighthouse;
@@ -33,10 +34,9 @@ public class AlgorithmApp {
 //        long diffTime = after - before;
 //        System.out.println("diffTime = " + diffTime);
 
-        int[] number = {-2,3,0,2,-5};
-
-        ThreePeople threePeople = new ThreePeople();
-        int solution = threePeople.solution(number);
+        int[] order = {2, 1, 6, 7, 5, 8, 4, 9, 3, 10};
+        ParcelBox parcelBox = new ParcelBox();
+        int solution = parcelBox.solution(order);
         System.out.println("solution = " + solution);
 
     }

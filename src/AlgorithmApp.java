@@ -5,9 +5,11 @@ import level1.MakeHamburger;
 import level1.OngRE2;
 import level2.NightWalk;
 import level2.NumberCardDivide;
+import level3.ComeBackHome;
 import level3.Lighthouse;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 
 public class AlgorithmApp {
@@ -33,13 +35,21 @@ public class AlgorithmApp {
 //        long diffTime = after - before;
 //        System.out.println("diffTime = " + diffTime);
 
-        int a = 3;
-        int b = 1;
-        int n = 20;
+        int n = 5;
+        int[][] roads = {
+                {1, 2}, {1, 4}, {2, 4}, {2, 5}, {4, 5}
+        };
+        int[] sources = {1,3,5};
+        int destination = 5;
 
-        Coke coke = new Coke();
-        int solution = coke.solution(a, b, n);
-        System.out.println("solution = " + solution);
+        ComeBackHome comeBackHome = new ComeBackHome();
+
+        long before = System.currentTimeMillis();
+        int[] solution = comeBackHome.solution(n, roads, sources, destination);
+        long after = System.currentTimeMillis();
+        long total = after - before;
+        System.out.println("total = " + total);
+        System.out.println("solution = " + Arrays.toString(solution));
 
     }
 }

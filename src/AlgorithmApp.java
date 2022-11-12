@@ -1,8 +1,5 @@
 import level0.OngRE;
-import level1.Coke;
-import level1.FoodFighter;
-import level1.MakeHamburger;
-import level1.OngRE2;
+import level1.*;
 import level2.NightWalk;
 import level2.NumberCardDivide;
 import level2.RollCakeDivide;
@@ -36,15 +33,11 @@ public class AlgorithmApp {
 //        long diffTime = after - before;
 //        System.out.println("diffTime = " + diffTime);
 
-        int[] topping = {1,2,1,3,1,4,1,2};
-        RollCakeDivide rollCakeDivide = new RollCakeDivide();
+        int[] number = {-2,3,0,2,-5};
 
-        long before = System.currentTimeMillis();
-        int solution = rollCakeDivide.solution(topping);
-        long after = System.currentTimeMillis();
-        long diffTime = after - before;
+        ThreePeople threePeople = new ThreePeople();
+        int solution = threePeople.solution(number);
         System.out.println("solution = " + solution);
-        System.out.println("diffTime = " + diffTime);
 
     }
 }

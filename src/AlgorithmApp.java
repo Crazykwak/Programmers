@@ -31,9 +31,9 @@ public class AlgorithmApp {
 //        long diffTime = after - before;
 //        System.out.println("diffTime = " + diffTime);
 
-        int[] elements = {7,9,1,1,4};
-        NumbersSumInARow numbersSumInARow = new NumbersSumInARow();
-        int solution = numbersSumInARow.solution(elements);
+        int[] cards = {8, 6, 3, 7, 2, 5, 1, 4};
+        PlayAlone playAlone = new PlayAlone();
+        int solution = playAlone.solution(cards);
         System.out.println("solution = " + solution);
 
     }

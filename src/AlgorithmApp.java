@@ -1,9 +1,6 @@
 import level0.OngRE;
 import level1.*;
-import level2.NightWalk;
-import level2.NumberCardDivide;
-import level2.ParcelBox;
-import level2.RollCakeDivide;
+import level2.*;
 import level3.ComeBackHome;
 import level3.Lighthouse;
 
@@ -34,9 +31,9 @@ public class AlgorithmApp {
 //        long diffTime = after - before;
 //        System.out.println("diffTime = " + diffTime);
 
-        int[] order = {2, 1, 6, 7, 5, 8, 4, 9, 3, 10};
-        ParcelBox parcelBox = new ParcelBox();
-        int solution = parcelBox.solution(order);
+        int[] elements = {7,9,1,1,4};
+        NumbersSumInARow numbersSumInARow = new NumbersSumInARow();
+        int solution = numbersSumInARow.solution(elements);
         System.out.println("solution = " + solution);
 
     }

@@ -16,12 +16,10 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        String[] wants = {"banana", "apple", "rice", "pork", "pot"};
-        int[] number = {3,2,2,2,1};
-        String[] discount = {"chicken", "apple", "apple", "banana", "rice", "apple", "pork", "banana", "pork", "rice", "pot", "banana", "apple", "banana"};
-
-        ForSales forSales = new ForSales();
-        int solution = forSales.solution(wants, number, discount);
+        String[] survey = {"AN", "CF", "MJ", "RT", "NA"};
+        int[] choices = {5,3,2,7,5};
+        KaKaoMBTI kaKaoMBTI = new KaKaoMBTI();
+        String solution = kaKaoMBTI.solution(survey, choices);
         System.out.println("solution = " + solution);
     }
 }

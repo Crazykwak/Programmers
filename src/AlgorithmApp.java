@@ -16,14 +16,12 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-//        int n = 9;
-//        int[][] wires = {{1,3},{2,3},{3,4},{4,5},{4,6},{4,7},{7,8},{7,9}};
+        int number = 10;
+        int limit = 3;
+        int power = 2;
 
-        int n = 6;
-        int[][] wires = {{1, 4}, {6, 3}, {2, 5}, {5, 1}, {5, 3}};
-
-        ElectricWebDivide webDivide = new ElectricWebDivide();
-        int solution = webDivide.solution(n, wires);
+        KnightWeapon knightWeapon = new KnightWeapon();
+        int solution = knightWeapon.solution(number, limit, power);
         System.out.println("solution = " + solution);
 
 

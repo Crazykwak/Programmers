@@ -16,13 +16,10 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        int[][] line = {{2, -1, 4}, {-2, -1, 4}, {0, -1, 1}, {5, -8, -12}, {5, 8, 12}};
-
-        Strar strar = new Strar();
-        String[] solution = strar.solution(line);
-        for (String s : solution) {
-            System.out.println("s = " + s);
-        }
+        int n = 2;
+        TowerOfHanoi towerOfHanoi = new TowerOfHanoi();
+        int[][] solution = towerOfHanoi.solution(n);
+        System.out.println("solution = " + Arrays.deepToString(solution));
 
     }
 }

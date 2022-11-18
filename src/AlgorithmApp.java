@@ -16,14 +16,13 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        int number = 10;
-        int limit = 3;
-        int power = 2;
+        int[][] line = {{2, -1, 4}, {-2, -1, 4}, {0, -1, 1}, {5, -8, -12}, {5, 8, 12}};
 
-        KnightWeapon knightWeapon = new KnightWeapon();
-        int solution = knightWeapon.solution(number, limit, power);
-        System.out.println("solution = " + solution);
-
+        Strar strar = new Strar();
+        String[] solution = strar.solution(line);
+        for (String s : solution) {
+            System.out.println("s = " + s);
+        }
 
     }
 }

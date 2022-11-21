@@ -18,24 +18,11 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-//        int m = 4;
-//        int n = 5;
-//        String[] board = {"CCBDE", "AAADE", "AAABF", "CCBBF"};
+        int[][] board = {{0,1,1,1},{1,1,1,1},{1,1,1,1},{0,0,1,0}};
 
-        int m = 6;
-        int n = 6;
-        String[] board = {"TTTANT", "RRFACC", "RRRFCC", "TRRRAA", "TTMMMF", "TMMTTJ"};
-
-        Friend4Block friend4Block = new Friend4Block();
-        int solution = friend4Block.solution(m, n, board);
+        MostBigSquare mostBigSquare = new MostBigSquare();
+        int solution = mostBigSquare.solution(board);
         System.out.println("solution = " + solution);
 
-
-        //  [
-        //  [C, C, B, D, E],
-        //  [A, A, A, D, E],
-        //  [A, A, A, B, F],
-        //  [C, C, B, B, F]
-        //  ]
     }
 }

@@ -18,12 +18,9 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        String[] words = {"AAAAE", "AAAE", "I", "EIO"};
-
-        VowelsDictionary vowelsDictionary = new VowelsDictionary();
-        for (String word : words) {
-            int solution = vowelsDictionary.solution(word);
-            System.out.println(word + " = " + solution);
-        }
+        long[] numbers = {2, 3, 7};
+        BitDifferentUnderTwo bitDifferentUnderTwo = new BitDifferentUnderTwo();
+        long[] solution = bitDifferentUnderTwo.solution(numbers);
+        System.out.println("solution = " + Arrays.toString(solution));
     }
 }

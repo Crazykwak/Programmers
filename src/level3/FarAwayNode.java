@@ -1,35 +1,28 @@
 package level3;
 
-import java.util.Arrays;
-import java.util.PriorityQueue;
+import java.util.*;
 
 public class FarAwayNode {
     public int solution(int n, int[][] edge) {
-        int answer = 0;
-        int[][] graph = new int[n][n];
+        int answer;
+        List<List<Integer>> list = new ArrayList<>();
         int[] distance = new int[n];
         boolean[] visited = new boolean[n];
         int max = 50001;
+
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                if(i==j) graph[i][j] = 0;
-                else graph[i][j] = max;
-            }
+            list.add(i, new ArrayList<>());
+            distance[i] = max;
         }
 
         for(int[] e: edge) {
             int from = e[0]-1;
             int to = e[1]-1;
-            if(graph[from][to] >= 1) {
-                graph[from][to] = graph[to][from] = 1;
-            }
+            list.get(from).add(to);
+            list.get(to).add(from);
         }
 
-        for (int i = 0; i < n; i++) {
-            distance[i] = max;
-        }
-
-        PriorityQueue<int[]> queue = new PriorityQueue<>((a,b) -> a[0] - b[0]);
+        Queue<int[]> queue = new LinkedList<>();
         distance[0] = 0;
         queue.add(new int[]{0,0});
 
@@ -41,21 +34,31 @@ public class FarAwayNode {
             }
 
             visited[u] = true;
-            for(int i = 0; i < n; i++) {
-                if(distance[i] > distance[u] + graph[u][i]) {
-                    distance[i] =  distance[u] + graph[u][i];
-                    queue.add(new int[] {i, distance[i]});
+
+            for (int adj : list.get(u)) {
+                int tmp = !list.get(u).contains(adj) ? 0 : 1;
+                if (distance[adj] > distance[u] + tmp) {
+                    distance[adj] = distance[u] + tmp;
+                    queue.add(new int[] {adj, distance[adj]});
                 }
             }
         }
 
-        for (int i = 0; i < n; i++) {
-            if(distance[i] == max) {
-                distance[i] = 0;
-            }
-        }
-        int maxy = Arrays.stream(distance).max().orElse(0);
+        int maxy = getMax(distance);
         answer = (int) Arrays.stream(distance).filter(e -> e == maxy).count();
         return answer;
+    }
+
+    private int getMax(int[] distance) {
+        int max = 0;
+
+        for (int target : distance) {
+            if (target == 50001) {
+                continue;
+            }
+            max = Math.max(max, target);
+        }
+
+        return max;
     }
 }

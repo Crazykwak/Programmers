@@ -36,7 +36,7 @@ public class FarAwayNode {
             visited[u] = true;
 
             for (int adj : list.get(u)) {
-                int tmp = !list.get(u).contains(adj) ? 0 : 1;
+                int tmp = !list.get(u).contains(adj) ? 500001 : 1;
                 if (distance[adj] > distance[u] + tmp) {
                     distance[adj] = distance[u] + tmp;
                     queue.add(new int[] {adj, distance[adj]});

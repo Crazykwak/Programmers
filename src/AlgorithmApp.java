@@ -1,3 +1,4 @@
+import backjun.ExcitingFunction;
 import backjun.Fibonazzi1;
 import level2.OrangePick;
 import level3.FarAwayNode;
@@ -12,7 +13,7 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        Fibonazzi1.solution();
+        ExcitingFunction.solution();
 
 
     }

@@ -1,5 +1,6 @@
 import backjun.ExcitingFunction;
 import backjun.Fibonazzi1;
+import backjun.ZeroOneTile;
 import level2.OrangePick;
 import level3.FarAwayNode;
 import level3.WalkerHeaven;
@@ -13,7 +14,7 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        ExcitingFunction.solution();
+        ZeroOneTile.solution();
 
 
     }

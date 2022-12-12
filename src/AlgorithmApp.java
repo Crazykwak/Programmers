@@ -15,12 +15,7 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        int n = 7;
-        int k = 3;
-        int[] enemy = {4, 2, 4, 5, 3, 1, 1};
-        DefenceGame defenceGame = new DefenceGame();
-        int solution = defenceGame.solution(n, k, enemy);
-        System.out.println("solution = " + solution);
+        MakeOne.solution();
 
 
     }

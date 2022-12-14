@@ -1,4 +1,5 @@
 import backjun.*;
+import level1.HallOfFame;
 import level1.MostClosedChar;
 import level1.StringDivide;
 import level2.DefenceGame;
@@ -17,11 +18,11 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        String s = "abracadabra";
-        StringDivide closedChar = new StringDivide();
-        int solution = closedChar.solution(s);
-        System.out.println("solution = " + solution);
-
+        int k = 4;
+        int[] score = {0, 300, 40, 300, 20, 70, 150, 50, 500, 1000};
+        HallOfFame hallOfFame = new HallOfFame();
+        int[] solution = hallOfFame.solution(k, score);
+        System.out.println("solution = " + Arrays.toString(solution));
 
     }
 }

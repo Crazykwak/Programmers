@@ -1,5 +1,6 @@
 import backjun.*;
 import level1.MostClosedChar;
+import level1.StringDivide;
 import level2.DefenceGame;
 import level2.OrangePick;
 import level2.Point;
@@ -16,10 +17,10 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        String s = "banana";
-        MostClosedChar closedChar = new MostClosedChar();
-        int[] solution = closedChar.solution(s);
-        System.out.println("solution = " + Arrays.toString(solution));
+        String s = "abracadabra";
+        StringDivide closedChar = new StringDivide();
+        int solution = closedChar.solution(s);
+        System.out.println("solution = " + solution);
 
 
     }

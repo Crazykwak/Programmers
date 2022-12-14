@@ -1,4 +1,5 @@
 import backjun.*;
+import level1.MostClosedChar;
 import level2.DefenceGame;
 import level2.OrangePick;
 import level2.Point;
@@ -15,7 +16,10 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        EasyStairNum.solution();
+        String s = "banana";
+        MostClosedChar closedChar = new MostClosedChar();
+        int[] solution = closedChar.solution(s);
+        System.out.println("solution = " + Arrays.toString(solution));
 
 
     }

@@ -7,6 +7,7 @@ import level2.OrangePick;
 import level2.Point;
 import level3.BestAlbum;
 import level3.FarAwayNode;
+import level3.TableCut;
 import level3.WalkerHeaven;
 import practice.hihi;
 
@@ -18,11 +19,12 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        int k = 4;
-        int[] score = {0, 300, 40, 300, 20, 70, 150, 50, 500, 1000};
-        HallOfFame hallOfFame = new HallOfFame();
-        int[] solution = hallOfFame.solution(k, score);
-        System.out.println("solution = " + Arrays.toString(solution));
+        int n = 8;
+        int k = 2;
+        String[] cmd = {"D 2","C","U 3","C","D 4","C","U 2","Z","Z","U 1","C"};
+        TableCut tableCut = new TableCut();
+        String solution = tableCut.solution(n, k, cmd);
+        System.out.println("solution = " + solution);
 
     }
 }

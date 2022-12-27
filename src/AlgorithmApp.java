@@ -1,6 +1,7 @@
 import backjun.*;
 import level1.HallOfFame;
 import level1.MostClosedChar;
+import level1.NumberBuBunSu;
 import level1.StringDivide;
 import level2.DefenceGame;
 import level2.OrangePick;
@@ -19,11 +20,10 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        int n = 8;
-        int k = 2;
-        String[] cmd = {"D 2","C","U 3","C","D 4","C","U 2","Z","Z","U 1","C"};
-        TableCut tableCut = new TableCut();
-        String solution = tableCut.solution(n, k, cmd);
+        String t = "1234567891012312315879153123121";
+        String p = "111111111111111111";
+        NumberBuBunSu buBunSu = new NumberBuBunSu();
+        int solution = buBunSu.solution(t, p);
         System.out.println("solution = " + solution);
 
     }

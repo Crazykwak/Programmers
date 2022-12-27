@@ -6,6 +6,7 @@ import level1.StringDivide;
 import level2.DefenceGame;
 import level2.OrangePick;
 import level2.Point;
+import level2.TableHashFunction;
 import level3.BestAlbum;
 import level3.FarAwayNode;
 import level3.TableCut;
@@ -20,10 +21,13 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        String t = "1234567891012312315879153123121";
-        String p = "111111111111111111";
-        NumberBuBunSu buBunSu = new NumberBuBunSu();
-        int solution = buBunSu.solution(t, p);
+        int[][] data = {{2, 2, 6}, {1, 5, 10}, {4, 2, 9}, {3, 8, 3}};
+        int col = 2;
+        int rowBegin = 2;
+        int rowEnd = 3;
+
+        TableHashFunction tableHashFunction = new TableHashFunction();
+        int solution = tableHashFunction.solution(data, col, rowBegin, rowEnd);
         System.out.println("solution = " + solution);
 
     }

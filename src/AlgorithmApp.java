@@ -18,13 +18,7 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        int n = 2;
-        int l = 4;
-        int r = 17;
-
-        SimilarKantoLang kantoLang = new SimilarKantoLang();
-        int solution = kantoLang.solution(n, l, r);
-        System.out.println("solution = " + solution);
+        MakeColorPaper.solution();
 
     }
 }

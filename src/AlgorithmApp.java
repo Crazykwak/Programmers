@@ -18,7 +18,9 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        QuadTree.solution();
+        int[] nums = {1,2,3,4,5};
+        Arrays.sort(nums);
+
 
     }
 }

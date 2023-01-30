@@ -4,10 +4,7 @@ import level1.MostClosedChar;
 import level1.NumberBuBunSu;
 import level1.StringDivide;
 import level2.*;
-import level3.BestAlbum;
-import level3.FarAwayNode;
-import level3.TableCut;
-import level3.WalkerHeaven;
+import level3.*;
 import practice.hihi;
 
 import java.io.IOException;
@@ -18,8 +15,11 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        int[] nums = {1,2,3,4,5};
-        Arrays.sort(nums);
+        int[][] scores = {{2, 2}, {1, 4}, {3, 2}, {3, 2}, {2, 1}};
+
+        PerformanceAppraisal performanceAppraisal = new PerformanceAppraisal();
+        int solution = performanceAppraisal.solution(scores);
+        System.out.println("solution = " + solution);
 
 
     }

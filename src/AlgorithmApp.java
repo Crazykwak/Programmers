@@ -15,10 +15,10 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        int[][] scores = {{2, 2}, {1, 4}, {3, 2}, {3, 2}, {2, 1}};
+        int[] weight = {100, 100, 100, 200, 200, 200};
 
-        PerformanceAppraisal performanceAppraisal = new PerformanceAppraisal();
-        int solution = performanceAppraisal.solution(scores);
+        SeesawCouple seesawCouple = new SeesawCouple();
+        long solution = seesawCouple.solution(weight);
         System.out.println("solution = " + solution);
 
 

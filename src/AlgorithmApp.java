@@ -15,12 +15,10 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        int x = 2;
-        int y = 5;
-        int n = 4;
-        NumberTranslate nt = new NumberTranslate();
-        int solution = nt.solution(x, y, n);
-        System.out.println("solution = " + solution);
+        String[] maps = {"X591X", "X1X5X", "X231X", "1XXX1"};
+        NoManIsland noManIsland = new NoManIsland();
+        int[] solution = noManIsland.solution(maps);
+        System.out.println("solution = " + Arrays.toString(solution));
 
 
     }

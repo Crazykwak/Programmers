@@ -15,10 +15,13 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        int[] numbers = {9, 1, 5, 3, 6, 2};
-        BigNumberInBack bigNumberInBack = new BigNumberInBack();
-        int[] solution = bigNumberInBack.solution(numbers);
-        System.out.println("solution = " + Arrays.toString(solution));
+        String s = "z";
+        String skip = "abcdefghij";
+        int index = 20;
+
+        CouplePassword c = new CouplePassword();
+        String solution = c.solution(s, skip, index);
+        System.out.println("solution = " + solution);
 
 
     }

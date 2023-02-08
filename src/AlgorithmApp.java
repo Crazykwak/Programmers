@@ -15,12 +15,9 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        String s = "z";
-        String skip = "abcdefghij";
-        int index = 20;
-
-        CouplePassword c = new CouplePassword();
-        String solution = c.solution(s, skip, index);
+        String[][] bookTime = {{"15:00", "17:00"}, {"16:40", "18:20"}, {"14:20", "15:20"}, {"14:10", "19:20"}, {"18:20", "21:20"}};
+        HotelRent hotelRent = new HotelRent();
+        int solution = hotelRent.solution(bookTime);
         System.out.println("solution = " + solution);
 
 

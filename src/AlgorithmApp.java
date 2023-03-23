@@ -12,12 +12,16 @@ public class AlgorithmApp {
     public static void main(String[] args) throws IOException {
         //test 하는 곳
 
-        String[] keyMap = {"ABACD", "BCEFD"};
-        String[] target = {"ABCD", "AABB"};
+        String[] maps = {
+                "LXOXE",
+                "OXXXO",
+                "OOSOO",
+                "XXXXX",
+                "OOOOO"};
 
-        AlmostKeyboard almostKeyboard = new AlmostKeyboard();
-        int[] solution = almostKeyboard.solution(keyMap, target);
-        System.out.println("solution = " + Arrays.toString(solution));
+        EscapeFromMaze escapeFromMaze = new EscapeFromMaze();
+        int solution = escapeFromMaze.solution(maps);
+        System.out.println("solution = " + solution);
 
 
     }
